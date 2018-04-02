@@ -3,7 +3,7 @@
 This module uses accuweather.com weather forecasting website as backend and weather capability for weboob. The module is accessible through wetboobs application.
 
 ## Getting started
-Download the repository accuweather into your modules folder for weboob. Make sure that the ~/.config/weboob/sources.list file has the path to the module folder. This is important to be able to load this new module in weboob.
+Download the repository accuweather into your modules folder of weboob. Make sure that the ~/.config/weboob/sources.list file has the path to the module folder. This is important to be able to load this new module in weboob.
 
 ## Prerequisites
 Install latest development branch of weboob (1.4), follow the instructions provided here:
@@ -47,3 +47,5 @@ forecast 1
 
 ## Particularities of the module
 Accuweather provides some temperatures and pressures in Fahrenhit (°F) and in inches of mercury (inHg) for American cities. For the sake of consistency, all temperatures are given in Celsius (°C) and pressures in hectopascal (hPa).
+
+Sometimes the minimum temperature on the cards is not available. This occurs especially when the forecast concerns the same day as today. In this case, the minimum and maximum temperatures correspond to the current temperature and the later is displayed.
