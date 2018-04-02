@@ -25,3 +25,15 @@ from weboob.tools.test import BackendTest
 
 class AccuWeatherTest(BackendTest):
     MODULE = 'accuweather'
+
+    def test_meteo(self):
+        l = list(self.backend.iter_city_search('paris'))
+        self.assertTrue(len(l) > 0)
+
+        city = l[0]
+        current = self.backend.get_current(city.id)
+
+        self.assertTrue(current.temp.value > -20 and current.temp.value < 50)
+
+        forecasts = list(self.backend.iter_forecast(city.id))
+        self.assertTrue(len(forecasts) > 0)
