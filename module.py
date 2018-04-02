@@ -30,7 +30,7 @@ class AccuWeatherModule(Module, CapWeather):
     NAME = 'accuweather'
     MAINTAINER = u'Manoj D'
     EMAIL = 'manoj.ducher@gmail.com'
-    VERSION = '1.3'
+    VERSION = '1.4'
     DESCRIPTION = 'Get forecasts from accuweather.com'
     LICENSE = 'AGPLv3+'
     BROWSER = AccuWeatherBrowser
