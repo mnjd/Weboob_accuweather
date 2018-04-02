@@ -3,7 +3,13 @@
 This module uses accuweather.com weather forecasting website as backend and weather capability for weboob. The module is accessible through wetboobs application.
 
 ## Getting started
-Download the repository accuweather into your modules folder of weboob. Make sure that the ~/.config/weboob/sources.list file has the path to the module folder. This is important to be able to load this new module in weboob.
+Download the repository accuweather into your modules folder of weboob. Make sure that the 
+
+```
+~/.config/weboob/sources.list
+```
+
+ file has the path to the module folder. This is important to be able to load this new module in weboob.
 
 ## Prerequisites
 Install latest development branch of weboob (1.4), follow the instructions provided here:
