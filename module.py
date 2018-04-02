@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Copyright(C) 2012 Arno Renevier
+# Copyright(C) 2012 Manoj D
 #
 # This file is part of weboob.
 #

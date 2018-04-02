@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Copyright(C) 2018      manojd
+# Copyright(C) 2018      Manoj D
 #
 # This file is part of weboob.
 #
