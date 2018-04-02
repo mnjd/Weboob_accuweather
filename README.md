@@ -26,6 +26,13 @@ https://git.weboob.org/weboob/devel.git
 
 If you use the latest stable version (1.3), make sure to change the version from '1.4' to '1.3' in module.py.
 
+## Running the tests
+In tools folder of your weboob installation, run "run_test.sh" followed by the name of the module you want to test:
+
+```
+./tools/run_tests.sh accuweather
+```
+
 ## Using the module
 Install the module in wetboobs:
 
