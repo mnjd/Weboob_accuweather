@@ -33,8 +33,6 @@ class AccuWeatherBrowser(PagesBrowser):
 
     weather_page = URL('en/fr/city/(?P<city_id>.*)/current-weather/(?P<id>.*)', WeatherPage)
 
-
-
     def iter_city_search(self, pattern):
         return self.city_page.go(pattern=pattern, api=self.API_KEY).iter_cities()
 

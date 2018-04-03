@@ -36,10 +36,13 @@ class AccuWeatherModule(Module, CapWeather):
     BROWSER = AccuWeatherBrowser
 
     def iter_city_search(self, pattern):
+        ''' search for cities '''
         return self.browser.iter_city_search(pattern)
 
     def get_current(self, city_id):
+        ''' get current weather '''
         return self.browser.get_current(city_id)
 
     def iter_forecast(self, city_id):
+        ''' get forecast '''
         return self.browser.iter_forecast(city_id)
