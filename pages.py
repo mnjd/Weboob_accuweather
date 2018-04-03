@@ -17,14 +17,13 @@
 # You should have received a copy of the GNU Affero General Public License
 # along with weboob. If not, see <http://www.gnu.org/licenses/>.
 from __future__ import unicode_literals
-from dateutil.parser import parse as parse_date
 from datetime import date
 from weboob.browser.elements import ItemElement, method, DictElement, ListElement
 from weboob.browser.pages import JsonPage, HTMLPage
-from weboob.browser.filters.standard import Format, Env, CleanText, CleanDecimal, Regexp
+from weboob.browser.filters.standard import CleanText, CleanDecimal, Regexp
 from weboob.browser.filters.json import Dict
 from weboob.capabilities.weather import Forecast, Current, City, Temperature
-from weboob.capabilities.base import NotAvailable
+
 
 class CityPage(JsonPage):
     ENCODING = 'utf-8'
